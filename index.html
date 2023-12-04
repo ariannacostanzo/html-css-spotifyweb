@@ -6,6 +6,8 @@
     <meta name="author" content="Arianna Costanzo">
     <meta name="description" content="spotify">
     <title>Spotify</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.ico">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,8 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' integrity='sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==' crossorigin='anonymous'/>
     <!-- stile -->
     <link rel="stylesheet" href="stile/style.css">
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="stile/responsive.css">
+    
 </head>
 <body>
     <!-- main division -->
@@ -28,17 +31,49 @@
                  <div class="sidebar-content">
                     <div class="sidebar-header">
                         <img src="img/logo-small.svg" alt="logo spotify" id="spotify-logo">
+                        <img class="not-shown" id="spotify-logo-large" src="img/logo.svg" alt="spotify-logo">
                     </div>
                     <ul class="sidebar-nav">
-                        <li><img src="img/home.svg" alt="home icon"></li>
-                        <li><img src="img/search.svg" alt="search icon"></li>
-                        <li><img src="img/libreria.svg" alt="librery icon"></li>
+                        <li class="selected-category-side">
+                            <img src="img/home.svg" alt="home icon">
+                            <span>Home</span>
+                        </li>
+                        <li>
+                            <img src="img/search.svg" alt="search icon">
+                            <span>Cerca</span>
+                        </li>
+                        <li>
+                            <img src="img/libreria.svg" alt="librery icon">
+                            <span>La tua libreria</span>
+                        </li>
                     </ul>
+                    <div class="playlists not-shown">
+                        <h3>Playlist</h3>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-square-plus"></i>
+                                Crea Playlist
+                            </li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="sidebar-footer">
                     <i class="fa-regular fa-circle-down"></i>
-                    <div class="profile-pic">
-                        <img src="img/profile.svg" alt="profile picture">
+                    <span class="not-shown">Installa app</span>
+                    <div class="separator not-shown"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="img/profile.svg" alt="profile picture">
+                        </div>
+                        <span class="not-shown">John Doe</span>
+                        
                     </div>
                 </div>
             </div>
@@ -55,6 +90,8 @@
 
                 <!-- main -->
                 <main class="container">
+
+                    <!-- main navbar -->
                     <ul class="main-navbar">
                         <li id="selected-category"><a href="#">in evidenza</a></li>
                         <li><a href="#">podcast</a></li>
@@ -63,6 +100,8 @@
                         <li><a href="#">nuove uscite</a></li>
                         <li><a href="#">scopri</a></li>
                     </ul>
+
+                    <!-- section recently played -->
                     <section class="recently played">
                         <h2>Recently played</h2>
                         <div class="row">
@@ -124,6 +163,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- section created for -->
                     </section>
                     <section class="created-for">
                         <h2>Creato per John Doe</h2>
@@ -146,6 +187,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- section most popular artists -->
                     </section>
                     <section class="most-popular">
                         <h2>Artisti più popolari</h2>

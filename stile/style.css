@@ -47,6 +47,28 @@ section {
     margin: 0 auto;
 }
 
+.not-shown {
+    display: none;
+}
+
+/* custom scrollbar */
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  } */
+
 /*------------------
         body content
  --------------------*/
@@ -75,12 +97,14 @@ section {
 
 .sidebar {
     background-color: black;
-    /* width: 250px; */
     flex-shrink: 0;
     padding: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: grey;
+    font-size: .7rem;
+    font-weight: bold;
     
 }
 
@@ -92,6 +116,9 @@ section {
     width: 25px;
 }
 
+#spotify-logo-large {
+    width: 100px;
+}
 
 .sidebar-nav {
     margin: 1rem 0;
@@ -99,19 +126,74 @@ section {
 
 .sidebar-nav li {
     margin: .4rem 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
 }
+
+.selected-category-side {
+    color: white;
+}
+
+.sidebar-nav span {
+    display: none;
+}
+
+/* playlists */
+
+.playlists h3{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.playlists ul li:first-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.playlists li {
+    margin: .7rem 0;
+}
+
+.playlists i {
+    font-size: 2rem;
+}
+
 
 .sidebar-footer {
     text-align: center;
     font-size: .7rem;
+    width: 100%;
     
 }
 
+.sidebar-footer span {
+    margin-left: 5px;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+    margin: 0.5rem 0;
+}
+
 .profile-pic {
+    margin-top: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profile-pic img {
     background-color: grey;
     border-radius: 50%;
-    overflow: hidden;
-    margin-top: 1rem;
+}
+
+.user span {
+    color: white;
 }
 
 /*------------------

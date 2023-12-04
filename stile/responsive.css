@@ -1,0 +1,58 @@
+@media screen and (min-width:623px) {
+
+    /*-------------- 
+        sidebar 
+     --------------*/
+
+    /* la sidebar diventa più grande */
+    .sidebar {
+        padding: 1rem;
+        width: 200px;
+    }
+
+    /* sparisce il logo piccolo */
+    #spotify-logo {
+        display: none;
+    }
+
+    /* appare il logo grande */
+    #spotify-logo-large {
+        display: block;
+    }
+
+    /* appaiono le descrizioni delle icone */
+    .sidebar-nav span {
+        display: inline;
+    }
+
+    /* appare il div con playlist */
+
+    .playlists {
+        display: block;
+    }
+
+    /* appare la scritta installa app e il testo si allinea a sinistra */
+
+    .sidebar-footer span {
+        display: inline;
+    }
+
+    .sidebar-footer {
+        text-align: left;
+        
+    }
+
+    .profile-pic {
+        margin-top: 0;
+    }
+
+    /* appare il separator */
+
+    .separator {
+        display: block;
+    }
+
+    
+
+    
+}
