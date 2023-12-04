@@ -1,7 +1,7 @@
 /* variables */
 
 :root {
-    --footer-height: 120px;
+    --footer-height: 100px;
 }
 
 /* css reset */
@@ -19,8 +19,14 @@ body {
     color: white;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
 
-/* main */
+/*------------------
+        main
+ --------------------*/
 
 /* contenitore di tutto il contenuto */
 
@@ -75,10 +81,127 @@ header {
 }
 
 
-/* footer */
+
+
+
+
+
+
+
+
+
+/*------------------
+        footer 
+ --------------------*/
 
 footer {
     background-color: #282828;
     height: var(--footer-height);
     flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    font-weight: 500;
 }
+
+/* player left */
+
+.player-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-img {
+    width: 40px;
+}
+
+
+.player-song p:nth-of-type(2) {
+    color: grey;
+    font-size: .9rem;
+}
+
+.player-left-icons i {
+    color: grey;
+    display: block;
+    margin: 5px;
+}
+
+
+
+
+/* player central */
+
+.player-top {
+    padding-bottom: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-top .fa-circle-play {
+    font-size: 1.8rem;
+}
+
+
+.player-bottom {
+    display: flex;
+    padding-top: 0.4rem;
+    font-size: .6rem;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.player-time {
+    background-color: grey;
+    border-radius: 5px;
+    height: 4px;
+    width: 20vw;
+    position: relative;
+}
+
+.player-time::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    width: 20%;
+    height: 4px;
+    border-radius: 5px;
+}
+
+/* player right */
+
+.player-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-volume {
+    background-color: grey;
+    border-radius: 5px;
+    height: 4px;
+    width: 12vw;
+    position: relative;
+}
+
+.player-volume::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    width: 20%;
+    height: 4px;
+    border-radius: 5px;
+}
+
+
+/*------------------
+      fine footer 
+ --------------------*/
