@@ -36,6 +36,17 @@ a {
     text-decoration: none;
 }
 
+section {
+    margin-top: 1.5rem;
+}
+
+/* utils */
+
+.container {
+    max-width: 92%;
+    margin: 0 auto;
+}
+
 /*------------------
         body content
  --------------------*/
@@ -66,7 +77,7 @@ a {
     background-color: black;
     /* width: 250px; */
     flex-shrink: 0;
-    padding: 0.5rem;
+    padding: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -145,12 +156,117 @@ header {
        fine header
  --------------------*/
 
-/* contenuto delle playlist */
+
+ /*------------------
+       main
+ --------------------*/
 
 main {
     max-width: 100%;
     height: 100%;
 }
+
+/* main navbar */
+
+.main-navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-transform: uppercase;
+    font-size: .7rem;
+    padding: 0.5rem;
+    margin-top: .5rem;
+    
+}
+
+
+.main-navbar li a {
+    margin-top: 1rem;
+    color: grey;
+}
+
+#selected-category {
+    position: relative;
+}
+
+#selected-category::after {
+    content: '';
+    height: 2px;
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    background-color: #6fa22a;
+}
+
+/* main sections */
+
+section h2{
+    font-size: 1.3rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin: 1rem -0.5rem;
+    text-align: center;
+}
+
+
+.col {
+    flex-basis: 50%;
+    padding:  0.5rem;
+}
+
+.card p:nth-of-type(1) {
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+.card p:nth-of-type(2) {
+    color: grey;
+    font-size: .9rem;
+    margin-top: 0.5rem;
+}
+
+/* section recently played */
+
+#img-division-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#img-division-container img {
+    max-width: 50%;
+}
+
+
+/* section created for */
+
+section > p {
+    color: grey;
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
+/* section most popular */
+
+.most-popular .main-img-container {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.most-popular {
+    padding-bottom: 2rem;
+}
+
+
+ /*------------------
+       fine main
+ --------------------*/
 
 
 
