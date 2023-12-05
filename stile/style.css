@@ -134,6 +134,7 @@ section {
 
 .selected-category-side {
     color: white;
+    position: relative;
 }
 
 .sidebar-nav span {
@@ -218,7 +219,7 @@ header {
     height: 80px;
     position: sticky;
     top: 0;
-    left: 250px;
+    left: 0;
     right: 0;
 }
 
@@ -399,8 +400,9 @@ footer {
 .player-top {
     padding-bottom: 0.4rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .player-top .fa-circle-play {

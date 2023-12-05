@@ -52,7 +52,103 @@
         display: block;
     }
 
+    .selected-category-side::before {
+        content: '';
+        background-color: #6fa22a;
+        height: 100%;
+        position: absolute;
+        left: -1rem;
+        top: 0;
+        width: 2px;
+        border-radius: 2px;
+    }
+
     
 
+    
+}
+
+@media screen and (min-width:783px) {
+
+    /* gli album si dispongo in 4 per riga */
+
+    .col {
+        flex-basis: 25%;
+    }
+
+    /* l'immagine del footer diventa più grande */
+
+    .player-img {
+        width: 50px;
+    }
+
+    /* il font aumenta */
+
+    footer {
+        font-size: .9rem;
+    }
+
+    .player-song p:nth-of-type(2) {
+        font-size: .7rem;
+    }
+
+    /* nel footer le icone si dispongono in flex  */
+
+    .player-left-icons {
+        display: flex;
+    }
+    
+    /* nel player centrale c'è più gap */
+    .player-top {
+        gap: 30px;
+    }
+
+    
+}
+
+@media screen and (min-width:1250px) {
+
+    /* gli album si dispongo in 6 per riga */
+
+    
+
+    .col {
+        flex-basis: calc(100% / 6);
+    }
+
+    /* l'immagine del footer diventa più grande */
+
+    .player-img {
+        width: 60px;
+    }
+
+    /* il font aumenta */
+
+    footer {
+        font-size: 1rem;
+    }
+
+    .player-song p:nth-of-type(2) {
+        font-size: .8rem;
+    }
+
+    /* c'è un po' di spaziamento tra le icone e la canzone */
+
+    .player-left-icons {
+        margin-left: 2rem;
+    }
+
+    /* nel player centrale c'è più gap */
+
+    .player-top {
+        gap: 30px;
+    }
+
+
+    /* c'è più spaziamento tra le icone di destra */
+
+    .player-right {
+        gap: 20px;
+    }
     
 }
