@@ -52,6 +52,8 @@
         display: block;
     }
 
+    /* appare la striscia verde */
+
     .selected-category-side::before {
         content: '';
         background-color: #6fa22a;
@@ -103,6 +105,10 @@
         gap: 30px;
     }
 
+    .player-top .fa-circle-play {
+        font-size: 1.7rem;
+    }
+
     
 }
 
@@ -143,6 +149,21 @@
     .player-top {
         gap: 30px;
     }
+
+    /* nel player centrale le icone sono più grandi */
+
+    .player-top .fa-circle-play {
+        font-size: 1.9rem;
+    }
+
+    .player-top .fa-circle-play:hover {
+        scale: 1.2;
+    }
+    
+    .player-top .fa-circle-play:active {
+        scale: 1.1;
+    }
+    
 
 
     /* c'è più spaziamento tra le icone di destra */
