@@ -59,21 +59,22 @@ section {
 
 /* custom scrollbar */
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 10px;
   }
   
   ::-webkit-scrollbar-track {
-    background: transparent; 
+    background: rgba(0, 0, 0, 0.5); 
   }
    
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #282828; 
+    border-radius: 5px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
-  } */
+  }
 
 
 
@@ -96,7 +97,7 @@ section {
     background-color: #141922;
     display: flex;
     flex-grow: 1;
-    overflow: auto;
+    overflow: hidden;
 }
 
 
@@ -132,6 +133,7 @@ section {
 
 .sidebar-nav {
     margin: 1rem 0;
+    
 }
 
 .sidebar-nav li {
@@ -154,11 +156,15 @@ section {
 
 /* playlists */
 
+
+
 .playlists h3{
     color: white;
     text-transform: uppercase;
     margin-bottom: .5rem;
 }
+
+
 
 .playlists ul li:first-child {
     display: flex;
@@ -253,6 +259,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 .btn {
@@ -269,6 +276,10 @@ header {
 
 .btn:hover {
     scale: 1.1;
+}
+
+.btn:active {
+    scale: 1;
 }
 
 /*------------------
@@ -363,7 +374,9 @@ section h2{
     cursor: pointer;
 }
 
-.main-img-container:hover::before {
+/* l'effetto non lo metto sulle immagini degli artisti perchè non devono andare in play */
+
+.main-img-container:hover:not(.img-circle-container)::before {
     content: '';
     position: absolute;
     top: 0;
@@ -375,9 +388,7 @@ section h2{
 }
 
 
-
-
-.main-img-container:hover::after {
+.main-img-container:hover:not(.img-circle-container)::after {
     font-family: "Font Awesome 5 Free";
     content: '\f144';
     position: absolute;
@@ -412,7 +423,7 @@ section > p {
 
 /* section most popular */
 
-.most-popular .main-img-container {
+.img-circle-container {
     border-radius: 50%;
     overflow: hidden;
 }

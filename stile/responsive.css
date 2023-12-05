@@ -31,6 +31,8 @@
         display: block;
     }
 
+    
+
     /* appare la scritta installa app e il testo si allinea a sinistra */
 
     .sidebar-footer span {
@@ -64,8 +66,6 @@
         width: 2px;
         border-radius: 2px;
     }
-
-    
 
     
 }
