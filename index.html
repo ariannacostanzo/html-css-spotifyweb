@@ -30,28 +30,28 @@
              <div class="sidebar">
                  <div class="sidebar-content">
                     <div class="sidebar-header">
-                        <img src="img/logo-small.svg" alt="logo spotify" id="spotify-logo">
-                        <img class="not-shown" id="spotify-logo-large" src="img/logo.svg" alt="spotify-logo">
+                        <img class="d-sm-none" src="img/logo-small.svg" alt="logo spotify" id="spotify-logo">
+                        <img class="d-none d-sm-block" id="spotify-logo-large" src="img/logo.svg" alt="spotify-logo">
                     </div>
 
                     <!-- sidebar nav -->
                     <ul class="sidebar-nav">
                         <li class="selected-category-side">
                             <img src="img/home.svg" alt="home icon">
-                            <span>Home</span>
+                            <span class="d-none d-sm-inline">Home</span>
                         </li>
                         <li>
                             <img src="img/search.svg" alt="search icon">
-                            <span>Cerca</span>
+                            <span class="d-none d-sm-inline">Cerca</span>
                         </li>
                         <li>
                             <img src="img/libreria.svg" alt="librery icon">
-                            <span>La tua libreria</span>
+                            <span class="d-none d-sm-inline">La tua libreria</span>
                         </li>
                     </ul>
 
                     <!-- playlist -->
-                    <div class="playlists not-shown">
+                    <div class="playlists d-none d-sm-block">
                         <h3>Playlist</h3>
                         <ul>
                             <li>
@@ -73,15 +73,15 @@
                 <div class="sidebar-footer">
                     <div class="install">
                         <i class="fa-regular fa-circle-down"></i>
-                        <span class="not-shown">Installa app</span>
+                        <span class="d-none d-sm-inline">Installa app</span>
 
                     </div>
-                    <div class="separator not-shown"></div>
+                    <div class="separator d-none d-sm-block"></div>
                     <div class="user">
                         <div class="profile-pic">
                             <img src="img/profile.svg" alt="profile picture">
                         </div>
-                        <span class="not-shown">John Doe</span>
+                        <span class="d-none d-sm-inline">John Doe</span>
                         
                     </div>
                 </div>
@@ -103,7 +103,7 @@
 
                     <!-- main navbar -->
                     <ul class="main-navbar">
-                        <li id="selected-category"><a href="#">in evidenza</a></li>
+                        <li class="active"><a href="#">in evidenza</a></li>
                         <li><a href="#">podcast</a></li>
                         <li><a href="#">classifiche</a></li>
                         <li><a href="#">generi e mood</a></li>
@@ -116,57 +116,75 @@
                         <h2>Recently played</h2>
                         <div class="row">
                             <div class="col">
-                                <div class="main-img-container" id="img-division-container">
+                                <figure class="main-img-container" id="img-division-container">
                                     <img class="img-division" src="img/linkin_park.jpg" alt="linkin park">
                                     <img class="img-division" src="img/linkin_park2.jpg" alt="linkin park album 2">
                                     <img class="img-division" src="img/soad.jpg" alt="system of a dawn album">
                                     <img class="img-division" src="img/muse.jpg" alt="muse album">
-                                </div>
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
                                 <div class="card">
                                     <p>Heavy Metal</p>
                                     <p>Playlist</p>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="main-img-container">
+                                <figure class="main-img-container">
                                     <img src="img/stranger.jpeg" alt="stranger things album">
-                                </div>
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
                                 <div class="card">
                                     <p>Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</p>
                                     <p>Kyle Dixon & Michael Stein</p>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="main-img-container">
+                                <figure class="main-img-container">
                                     <img src="img/iamx.jpg" alt="iamx album">
-                                </div>
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
                                 <div class="card">
                                     <p>Iamx</p>
                                     <p>Playlist</p>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="main-img-container">
+                                <figure class="main-img-container">
                                     <img src="img/pixel_terror.jpg" alt="pixel terror album">
-                                </div>
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
                                 <div class="card">
                                     <p>Pixel Terror</p>
                                     <p>Playlist</p>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="main-img-container">
+                                <figure class="main-img-container">
                                     <img src="img/ratatat.jpg" alt="ratatat album">
-                                </div>
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
                                 <div class="card">
                                     <p>Ratatat</p>
                                     <p>Playlist</p>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="main-img-container">
+                                <figure class="main-img-container">
                                     <img src="img/altj.png" alt="alt j album">
-                                </div>
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
                                 <div class="card">
                                     <p>Alt J</p>
                                     <p>Playlist</p>
@@ -181,17 +199,23 @@
                         <p>Più ascolti, più accurati saranno i suggerimenti</p>
                         <div class="row">
                             <div class="col">
-                                <div class="main-img-container">
+                                <figure class="main-img-container">
                                     <img src="img/radar.jpeg" alt="radar">
-                                </div>
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
                                 <div class="card">
                                     <p>Release Radar</p>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="main-img-container">
+                                <figure class="main-img-container">
                                     <img src="img/mixdaily.jpeg" alt="daily mix">
-                                </div>
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
                                 <div class="card">
                                     <p>Daily Mix 1</p>
                                 </div>
@@ -205,17 +229,23 @@
                         <p>Più ascolti, più accurati saranno i suggerimenti</p>
                         <div class="row">
                             <div class="col">
-                                <div class="main-img-container img-circle-container">
+                                <figure class="main-img-container img-circle-container">
                                     <img src="img/youg.jpeg" alt="lana del rey album">
-                                </div>
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
                                 <div class="card">
                                     <p>Lana Del Rey</p>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="main-img-container img-circle-container">
+                                <figure class="main-img-container img-circle-container">
                                     <img src="img/einaudi.jpeg" alt="ludovico einaudi">
-                                </div>
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
                                 <div class="card">
                                     <p>Ludovico Einaudi</p>
                                 </div>
@@ -242,7 +272,7 @@
                     <p>Ratatat</p>
                     <p>Desert Eagle</p>
                 </div>
-                <div class="player-left-icons">
+                <div class="player-left-icons d-md-flex">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>

@@ -52,7 +52,7 @@ section {
     margin: 0 auto;
 }
 
-.not-shown {
+.d-none {
     display: none;
 }
 
@@ -114,7 +114,7 @@ section {
     flex-direction: column;
     justify-content: space-between;
     color: grey;
-    font-size: .7rem;
+    font-size: .8rem;
     font-weight: bold;
     
 }
@@ -128,7 +128,7 @@ section {
 }
 
 #spotify-logo-large {
-    width: 100px;
+    width: 150px;
 }
 
 .sidebar-nav {
@@ -145,14 +145,15 @@ section {
     
 }
 
+
+
 .selected-category-side {
     color: white;
     position: relative;
 }
 
-.sidebar-nav span {
-    display: none;
-}
+
+
 
 /* playlists */
 
@@ -173,12 +174,12 @@ section {
 }
 
 .playlists li {
-    margin: .7rem 3rem .7rem 0;
+    margin: .9rem 3rem .9rem 0;
     cursor: pointer;
 }
 
 .playlists li:not(:first-child) {
-    margin-right: 5rem;
+    margin-right: 4rem;
 }
 
 .playlists i {
@@ -188,7 +189,6 @@ section {
 
 .sidebar-footer {
     text-align: center;
-    font-size: .7rem;
     width: 100%;
     cursor: pointer;
     
@@ -305,7 +305,7 @@ main {
     flex-wrap: wrap;
     gap: 30px;
     text-transform: uppercase;
-    font-size: .7rem;
+    font-size: .8rem;
     padding: 0.5rem;
     margin-top: .5rem;
     
@@ -322,11 +322,11 @@ main {
     color: white;
 }
 
-#selected-category {
+.main-navbar .active {
     position: relative;
 }
 
-#selected-category::after {
+.main-navbar .active::after {
     content: '';
     height: 2px;
     width: 40%;
@@ -369,35 +369,28 @@ section h2{
     margin-top: 0.5rem;
 }
 
-.main-img-container {
+figure {
     position: relative;
     cursor: pointer;
 }
 
-/* l'effetto non lo metto sulle immagini degli artisti perchè non devono andare in play */
-
-.main-img-container:hover:not(.img-circle-container)::before {
-    content: '';
+.play-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.main-img-container:hover:not(.img-circle-container)::after {
-    font-family: "Font Awesome 5 Free";
-    content: '\f144';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
-    
+section figure:hover .play-btn {
+    display: flex;
 }
+
 
 
 /* section recently played */

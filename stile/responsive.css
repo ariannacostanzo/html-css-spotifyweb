@@ -9,49 +9,29 @@
         padding: 1rem;
         width: 200px;
     }
-
-    /* sparisce il logo piccolo */
-    #spotify-logo {
+  
+    .d-sm-none {
         display: none;
     }
-
-    /* appare il logo grande */
-    #spotify-logo-large {
+ 
+    .d-sm-block {
         display: block;
     }
 
-    /* appaiono le descrizioni delle icone */
-    .sidebar-nav span {
+    .d-sm-inline {
         display: inline;
-    }
-
-    /* appare il div con playlist */
-
-    .playlists {
-        display: block;
     }
 
     
+    /* nel footer il testo si allinea a sinistra */
 
-    /* appare la scritta installa app e il testo si allinea a sinistra */
-
-    .sidebar-footer span {
-        display: inline;
-    }
 
     .sidebar-footer {
-        text-align: left;
-        
+        text-align: left; 
     }
 
     .profile-pic {
         margin-top: 0;
-    }
-
-    /* appare il separator */
-
-    .separator {
-        display: block;
     }
 
     /* appare la striscia verde */
@@ -94,9 +74,7 @@
         font-size: .7rem;
     }
 
-    /* nel footer le icone si dispongono in flex  */
-
-    .player-left-icons {
+    .d-md-flex {
         display: flex;
     }
     
@@ -115,8 +93,6 @@
 @media screen and (min-width:1250px) {
 
     /* gli album si dispongo in 6 per riga */
-
-    
 
     .col {
         flex-basis: calc(100% / 6);
